@@ -5,6 +5,7 @@ const file = require('fs');
 const bodyparser = require('body-parser');
 const gamesRoute = require('./api/routes/games');
 const ordersRoute = require('./api/routes/orders');
+const citiesRoute = require('./api/routes/cities');
 
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(bodyparser.json());
