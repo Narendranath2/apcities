@@ -21,6 +21,7 @@ app.use(cors());
 
 app.use('/games',gamesRoute);
 app.use('/orders',ordersRoute);
+app.use('/cities',citiesRoute);
 app.use('/',(req, res, next) => {
     res.status(200).sendFile(__dirname + "/index.html");
 });
